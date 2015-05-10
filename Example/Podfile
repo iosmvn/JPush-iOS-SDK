@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'JPush-iOS-SDK', :exclusive => true do
+  pod "JPush-iOS-SDK", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "JPush-iOS-SDK", :path => "../"
+
+  pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+end

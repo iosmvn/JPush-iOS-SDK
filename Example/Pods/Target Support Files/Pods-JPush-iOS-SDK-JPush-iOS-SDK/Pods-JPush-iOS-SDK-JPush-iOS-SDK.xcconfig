@@ -1,0 +1,1 @@
+PODS_JPUSH_IOS_SDK_JPUSH_IOS_SDK_OTHER_LDFLAGS = -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "libz.dylib"

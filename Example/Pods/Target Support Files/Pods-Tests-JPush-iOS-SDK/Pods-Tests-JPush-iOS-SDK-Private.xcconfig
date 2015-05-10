@@ -1,0 +1,6 @@
+#include "Pods-Tests-JPush-iOS-SDK.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/JPush-iOS-SDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase" "${PODS_ROOT}/Headers/Public/JPush-iOS-SDK" "${PODS_ROOT}/Headers/Public/Kiwi"
+OTHER_LDFLAGS = ${PODS_TESTS_JPUSH_IOS_SDK_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

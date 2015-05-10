@@ -1,0 +1,20 @@
+PODS:
+  - FBSnapshotTestCase (1.8.1)
+  - JPush-iOS-SDK (1.8.3)
+  - Kiwi (2.3.1)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JPush-iOS-SDK (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  JPush-iOS-SDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
+  JPush-iOS-SDK: 95e72709968208b4b05ee2a59e2ffbf822bbbbe5
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+
+COCOAPODS: 0.37.0
