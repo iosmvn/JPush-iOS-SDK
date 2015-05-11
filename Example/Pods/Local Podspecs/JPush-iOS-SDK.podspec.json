@@ -30,7 +30,8 @@
     "SystemConfiguration",
     "CoreGraphics",
     "Foundation",
-    "Security",
-    "libz.dylib"
-  ]
+    "Security"
+  ],
+  "libraries": "libz.dylib",
+  "vendored_libraries": "Pod/Classes/libPushSDK-1.8.3.a"
 }

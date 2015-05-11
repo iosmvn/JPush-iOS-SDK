@@ -1,1 +1,2 @@
-PODS_TESTS_JPUSH_IOS_SDK_OTHER_LDFLAGS = -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "libz.dylib"
+PODS_TESTS_JPUSH_IOS_SDK_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/../../Pod/Classes"
+PODS_TESTS_JPUSH_IOS_SDK_OTHER_LDFLAGS = -l"PushSDK-1.8.3" -l"libz.dylib" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
