@@ -33,8 +33,9 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CFNetwork', 'CoreFoundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Foundation', 'Security', 'libz'
+  s.frameworks = 'UIKit', 'CFNetwork', 'CoreFoundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Foundation', 'Security'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-weak_library /usr/lib/libz.dylib' }
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.vendored_library = 'Pod/Classes/libPushSDK-1.8.3.a'
+  s.vendored_library = 'Pod/Classes/*.a'
 
 end
