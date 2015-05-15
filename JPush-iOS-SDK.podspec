@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JPush-iOS-SDK"
-  s.version          = "1.8.3"
+  s.version          = "1.8.3.1"
   s.summary          = "JPush SDK for iOS."
   s.description      = <<-DESC
                        JPush SDK for iOS. \n通过极光推送服务，主动、及时地向您的用户发起交互，向其发送聊天消息、日程提醒、活动预告、进度提示、动态更新等。精准的目标用户和有价值的推送内容可以提升用户忠诚度，提高留存率与收入。\n            详情请查看官网：http://www.jpush.cn/ \n
