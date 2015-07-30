@@ -4,7 +4,7 @@
 //
 //  Created by JPush on 12-8-15.
 //  Copyright (c) 2012年 HXHG. All rights reserved.
-//  Version: 1.8.4
+//  Version: 1.8.5
 
 @class CLRegion;
 @class UILocalNotification;

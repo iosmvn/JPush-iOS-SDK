@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JPush-iOS-SDK"
-  s.version      = "1.8.4"
+  s.version      = "1.8.5"
   s.summary      = "JPush SDK for iOS.极光推送，使得开发者可以即时地向其应用程序的用户推送通知或者消息，与用户保持互动，从而有效地提高留存率，提升用户体验。平台提供整合了Android推送、iOS推送的统一推送服务。"
 
   s.description  = <<-DESC
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
