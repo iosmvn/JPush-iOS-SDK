@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F0D5C3719AF147E00D049E9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0D5C3619AF147E00D049E9 /* libz.dylib */; };
 		1F5BDEA3199CD6B900AAFFF1 /* index.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BDE9F199CD6B900AAFFF1 /* index.png */; };
 		1F5BDEA4199CD6B900AAFFF1 /* localNotification.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BDEA0199CD6B900AAFFF1 /* localNotification.png */; };
 		1F5BDEA5199CD6B900AAFFF1 /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BDEA1199CD6B900AAFFF1 /* report.png */; };
@@ -35,7 +34,8 @@
 		1FC88A7318EA51CC006C3011 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC88A7218EA51CC006C3011 /* Security.framework */; };
 		1FCA68DE19767F520030886E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA68DD19767F520030886E /* Images.xcassets */; };
 		1FF2932719A31EDD00796417 /* APService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF2932619A31EDD00796417 /* APService.h */; };
-		AA006AD91B60B5AF00472DA9 /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA006AD81B60B5AF00472DA9 /* libPushSDK-1.8.5.a */; };
+		AA76070C1BD8F6FB00378575 /* libPushSDK-1.8.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA76070B1BD8F6FB00378575 /* libPushSDK-1.8.8.a */; };
+		AAA518531BCCAB9000CBEAEF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA518521BCCAB9000CBEAEF /* libz.tbd */; };
 		DD0799AB1654D5E7006FCFEE /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2DE95E160AB11F0092BF6A /* AppDelegate.h */; };
 		DD0799AC1654D5EF006FCFEE /* PushTest-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DD2DE95D160AB11F0092BF6A /* PushTest-Prefix.pch */; };
 		DD0A0C4D16ACF90900E62BFD /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = DD0A0C4C16ACF90900E62BFD /* sound.caf */; };
@@ -53,7 +53,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F0D5C3619AF147E00D049E9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1F5BDE9F199CD6B900AAFFF1 /* index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = index.png; path = tabBarImage/index.png; sourceTree = "<group>"; };
 		1F5BDEA0199CD6B900AAFFF1 /* localNotification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = localNotification.png; path = tabBarImage/localNotification.png; sourceTree = "<group>"; };
 		1F5BDEA1199CD6B900AAFFF1 /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = report.png; path = tabBarImage/report.png; sourceTree = "<group>"; };
@@ -81,7 +80,8 @@
 		1FC88A7218EA51CC006C3011 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1FCA68DD19767F520030886E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FF2932619A31EDD00796417 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
-		AA006AD81B60B5AF00472DA9 /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPushSDK-1.8.5.a"; path = "../lib/libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
+		AA76070B1BD8F6FB00378575 /* libPushSDK-1.8.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPushSDK-1.8.8.a"; path = "../lib/libPushSDK-1.8.8.a"; sourceTree = "<group>"; };
+		AAA518521BCCAB9000CBEAEF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DD0A0C4C16ACF90900E62BFD /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sound.caf; path = ../sound.caf; sourceTree = "<group>"; };
 		DD2DE94B160AB11F0092BF6A /* PushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2DE94F160AB11F0092BF6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -105,8 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA006AD91B60B5AF00472DA9 /* libPushSDK-1.8.5.a in Frameworks */,
-				1F0D5C3719AF147E00D049E9 /* libz.dylib in Frameworks */,
+				AA76070C1BD8F6FB00378575 /* libPushSDK-1.8.8.a in Frameworks */,
+				AAA518531BCCAB9000CBEAEF /* libz.tbd in Frameworks */,
 				1FC88A7318EA51CC006C3011 /* Security.framework in Frameworks */,
 				DD2DE96F160AB18B0092BF6A /* SystemConfiguration.framework in Frameworks */,
 				DD2DE96D160AB1800092BF6A /* CoreTelephony.framework in Frameworks */,
@@ -203,8 +203,8 @@
 		DD2DE94E160AB11F0092BF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA006AD81B60B5AF00472DA9 /* libPushSDK-1.8.5.a */,
-				1F0D5C3619AF147E00D049E9 /* libz.dylib */,
+				AA76070B1BD8F6FB00378575 /* libPushSDK-1.8.8.a */,
+				AAA518521BCCAB9000CBEAEF /* libz.tbd */,
 				1FC88A7218EA51CC006C3011 /* Security.framework */,
 				DD2DE96E160AB18B0092BF6A /* SystemConfiguration.framework */,
 				DD2DE96C160AB1800092BF6A /* CoreTelephony.framework */,
@@ -447,12 +447,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushTest/PushTest-Prefix.pch";
 				INFOPLIST_FILE = "PushTest/PushTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib\"",
-					"/Users/xiaomeng/JPUSH发布工程/JPush-iOS-SDK-1.8.4/lib",
-					"/Users/xiaomeng/JPUSH发布工程/JPush-iOS-SDK-1.8.5/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -477,12 +475,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushTest/PushTest-Prefix.pch";
 				INFOPLIST_FILE = "PushTest/PushTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib\"",
-					"/Users/xiaomeng/JPUSH发布工程/JPush-iOS-SDK-1.8.4/lib",
-					"/Users/xiaomeng/JPUSH发布工程/JPush-iOS-SDK-1.8.5/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
