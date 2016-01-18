@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+static NSString *appKey = @"AppKey copied from JPush Portal application";
+static NSString *channel = @"Publish channel";
+static BOOL isProduction = FALSE;
 
 @interface AppDelegate : NSObject<UIApplicationDelegate> {
   UILabel *_infoLabel;

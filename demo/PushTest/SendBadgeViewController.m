@@ -7,7 +7,7 @@
 //
 
 #import "SendBadgeViewController.h"
-#include "APService.h"
+#include "JPUSHService.h"
 
 @interface SendBadgeViewController () {
   CGRect _frame;
@@ -66,7 +66,7 @@
   NSString *stringBadge = _sendBadgeText.text;
   int value = [stringBadge intValue];
 
-  [APService setBadge:value];
+  [JPUSHService setBadge:value];
   NSLog(@"send badge:%d to jpush server", value);
 }
 @end

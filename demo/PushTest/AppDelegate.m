@@ -12,7 +12,7 @@
 //
 
 #import "AppDelegate.h"
-#import "APService.h"
+#import "JPUSHService.h"
 #import "RootViewController.h"
 
 @implementation AppDelegate {
@@ -23,11 +23,22 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   // Override point for customization after application launch.
-  [APService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
-                                                 UIRemoteNotificationTypeSound |
-                                                 UIRemoteNotificationTypeAlert)
-                                     categories:nil];
-  [APService setupWithOption:launchOptions];
+  if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+      //可以添加自定义categories
+      [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+                                                        UIUserNotificationTypeSound |
+                                                        UIUserNotificationTypeAlert)
+                                            categories:nil];
+  } else {
+      //categories 必须为nil
+      [JPUSHService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                        UIRemoteNotificationTypeSound |
+                                                        UIRemoteNotificationTypeAlert)
+                                            categories:nil];
+  }
+    
+  [JPUSHService setupWithOption:launchOptions appKey:appKey
+                        channel:channel apsForProduction:isProduction];
 
   [[NSBundle mainBundle] loadNibNamed:@"JpushTabBarViewController"
                                 owner:self
@@ -88,7 +99,7 @@
                        blue:255.0 / 255
                       alpha:1];
   NSLog(@"%@", [NSString stringWithFormat:@"Device Token: %@", deviceToken]);
-  [APService registerDeviceToken:deviceToken];
+  [JPUSHService registerDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application
@@ -127,7 +138,7 @@
 
 - (void)application:(UIApplication *)application
     didReceiveRemoteNotification:(NSDictionary *)userInfo {
-  [APService handleRemoteNotification:userInfo];
+  [JPUSHService handleRemoteNotification:userInfo];
   NSLog(@"收到通知:%@", [self logDic:userInfo]);
   [rootViewController addNotificationCount];
 }
@@ -136,7 +147,7 @@
     didReceiveRemoteNotification:(NSDictionary *)userInfo
           fetchCompletionHandler:
               (void (^)(UIBackgroundFetchResult))completionHandler {
-  [APService handleRemoteNotification:userInfo];
+  [JPUSHService handleRemoteNotification:userInfo];
   NSLog(@"收到通知:%@", [self logDic:userInfo]);
   [rootViewController addNotificationCount];
 
@@ -145,7 +156,7 @@
 
 - (void)application:(UIApplication *)application
     didReceiveLocalNotification:(UILocalNotification *)notification {
-  [APService showLocalNotificationAtFront:notification identifierKey:nil];
+  [JPUSHService showLocalNotificationAtFront:notification identifierKey:nil];
 }
 
 // log NSSet with UTF8

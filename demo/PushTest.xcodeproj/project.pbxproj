@@ -33,9 +33,9 @@
 		1F5BDED4199CD7CF00AAFFF1 /* SetTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BDECA199CD7CF00AAFFF1 /* SetTagsViewController.m */; };
 		1FC88A7318EA51CC006C3011 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC88A7218EA51CC006C3011 /* Security.framework */; };
 		1FCA68DE19767F520030886E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA68DD19767F520030886E /* Images.xcassets */; };
-		1FF2932719A31EDD00796417 /* APService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF2932619A31EDD00796417 /* APService.h */; };
-		AA76070C1BD8F6FB00378575 /* libPushSDK-1.8.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA76070B1BD8F6FB00378575 /* libPushSDK-1.8.8.a */; };
-		AAA518531BCCAB9000CBEAEF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA518521BCCAB9000CBEAEF /* libz.tbd */; };
+		AAD940A71BBA5A0500A08AFF /* JPUSHService.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD940A61BBA5A0500A08AFF /* JPUSHService.h */; settings = {ASSET_TAGS = (); }; };
+		AAD940A91BBA5A1600A08AFF /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD940A81BBA5A1600A08AFF /* jpush-ios-2.1.0.a */; };
+		AAD940AB1BBA5AEB00A08AFF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD940AA1BBA5AEB00A08AFF /* libz.tbd */; };
 		DD0799AB1654D5E7006FCFEE /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2DE95E160AB11F0092BF6A /* AppDelegate.h */; };
 		DD0799AC1654D5EF006FCFEE /* PushTest-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DD2DE95D160AB11F0092BF6A /* PushTest-Prefix.pch */; };
 		DD0A0C4D16ACF90900E62BFD /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = DD0A0C4C16ACF90900E62BFD /* sound.caf */; };
@@ -49,7 +49,6 @@
 		DD2DE96B160AB1710092BF6A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2DE96A160AB1710092BF6A /* CoreFoundation.framework */; };
 		DD2DE96D160AB1800092BF6A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2DE96C160AB1800092BF6A /* CoreTelephony.framework */; };
 		DD2DE96F160AB18B0092BF6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2DE96E160AB18B0092BF6A /* SystemConfiguration.framework */; };
-		DD7ED009161197690072BCBF /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7ED008161197690072BCBF /* PushConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,9 +78,9 @@
 		1F5BDECA199CD7CF00AAFFF1 /* SetTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTagsViewController.m; sourceTree = "<group>"; };
 		1FC88A7218EA51CC006C3011 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1FCA68DD19767F520030886E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1FF2932619A31EDD00796417 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
-		AA76070B1BD8F6FB00378575 /* libPushSDK-1.8.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPushSDK-1.8.8.a"; path = "../lib/libPushSDK-1.8.8.a"; sourceTree = "<group>"; };
-		AAA518521BCCAB9000CBEAEF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AAD940A61BBA5A0500A08AFF /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		AAD940A81BBA5A1600A08AFF /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.0.a"; path = "../lib/jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
+		AAD940AA1BBA5AEB00A08AFF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DD0A0C4C16ACF90900E62BFD /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sound.caf; path = ../sound.caf; sourceTree = "<group>"; };
 		DD2DE94B160AB11F0092BF6A /* PushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2DE94F160AB11F0092BF6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -97,7 +96,6 @@
 		DD2DE96A160AB1710092BF6A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		DD2DE96C160AB1800092BF6A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DD2DE96E160AB18B0092BF6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DD7ED008161197690072BCBF /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA76070C1BD8F6FB00378575 /* libPushSDK-1.8.8.a in Frameworks */,
-				AAA518531BCCAB9000CBEAEF /* libz.tbd in Frameworks */,
+				AAD940AB1BBA5AEB00A08AFF /* libz.tbd in Frameworks */,
+				AAD940A91BBA5A1600A08AFF /* jpush-ios-2.1.0.a in Frameworks */,
 				1FC88A7318EA51CC006C3011 /* Security.framework in Frameworks */,
 				DD2DE96F160AB18B0092BF6A /* SystemConfiguration.framework in Frameworks */,
 				DD2DE96D160AB1800092BF6A /* CoreTelephony.framework in Frameworks */,
@@ -176,7 +174,7 @@
 		DD266BB71613428600F3C9D1 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				1FF2932619A31EDD00796417 /* APService.h */,
+				AAD940A61BBA5A0500A08AFF /* JPUSHService.h */,
 			);
 			name = lib;
 			path = ../lib;
@@ -203,8 +201,8 @@
 		DD2DE94E160AB11F0092BF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA76070B1BD8F6FB00378575 /* libPushSDK-1.8.8.a */,
-				AAA518521BCCAB9000CBEAEF /* libz.tbd */,
+				AAD940AA1BBA5AEB00A08AFF /* libz.tbd */,
+				AAD940A81BBA5A1600A08AFF /* jpush-ios-2.1.0.a */,
 				1FC88A7218EA51CC006C3011 /* Security.framework */,
 				DD2DE96E160AB18B0092BF6A /* SystemConfiguration.framework */,
 				DD2DE96C160AB1800092BF6A /* CoreTelephony.framework */,
@@ -236,7 +234,6 @@
 				1F5BDE9E199CD6A300AAFFF1 /* tabBarImage */,
 				1F5BDE9D199CD69D00AAFFF1 /* icon */,
 				DD0A0C4C16ACF90900E62BFD /* sound.caf */,
-				DD7ED008161197690072BCBF /* PushConfig.plist */,
 				DD2DE957160AB11F0092BF6A /* PushTest-Info.plist */,
 				DD2DE958160AB11F0092BF6A /* InfoPlist.strings */,
 				DD2DE95B160AB11F0092BF6A /* main.m */,
@@ -253,12 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5BDED1199CD7CF00AAFFF1 /* setLocalNotificationViewController.h in Headers */,
+				AAD940A71BBA5A0500A08AFF /* JPUSHService.h in Headers */,
 				1F5BDECF199CD7CF00AAFFF1 /* SendBadgeViewController.h in Headers */,
 				DD0799AB1654D5E7006FCFEE /* AppDelegate.h in Headers */,
 				DD0799AC1654D5EF006FCFEE /* PushTest-Prefix.pch in Headers */,
 				1F5BDECD199CD7CF00AAFFF1 /* RootViewController.h in Headers */,
 				1F5BDED3199CD7CF00AAFFF1 /* SetTagsViewController.h in Headers */,
-				1FF2932719A31EDD00796417 /* APService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +322,6 @@
 				1F5BDEA4199CD6B900AAFFF1 /* localNotification.png in Resources */,
 				1F5BDEB2199CD6E600AAFFF1 /* iphone1x.png in Resources */,
 				1FCA68DE19767F520030886E /* Images.xcassets in Resources */,
-				DD7ED009161197690072BCBF /* PushConfig.plist in Resources */,
 				1F5BDEAF199CD6E600AAFFF1 /* ipad2x.png in Resources */,
 				DD0A0C4D16ACF90900E62BFD /* sound.caf in Resources */,
 				1F5BDEBE199CD7AE00AAFFF1 /* SendBadgeViewController.xib in Resources */,

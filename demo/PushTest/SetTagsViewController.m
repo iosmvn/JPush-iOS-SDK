@@ -12,7 +12,7 @@
 //
 
 #import "SetTagsViewController.h"
-#import "APService.h"
+#import "JPUSHService.h"
 
 @interface SetTagsViewController () {
   CGRect _frame;
@@ -86,7 +86,7 @@
   __autoreleasing NSString *alias = _aliasTextField.text;
   [self analyseInput:&alias tags:&tags];
 
-  [APService setTags:tags
+  [JPUSHService setTags:tags
                  alias:alias
       callbackSelector:@selector(tagsAliasCallback:tags:alias:)
                 target:self];
@@ -106,7 +106,7 @@
 }
 
 - (IBAction)resetTags:(id)sender {
-  [APService setTags:[NSSet set]
+  [JPUSHService setTags:[NSSet set]
       callbackSelector:@selector(tagsAliasCallback:tags:alias:)
                 object:self];
   UIAlertView *alert =
@@ -118,7 +118,7 @@
   [alert show];
 }
 - (IBAction)resetAlias:(id)sender {
-  [APService setAlias:@""
+  [JPUSHService setAlias:@""
       callbackSelector:@selector(tagsAliasCallback:tags:alias:)
                 object:self];
   UIAlertView *alert =

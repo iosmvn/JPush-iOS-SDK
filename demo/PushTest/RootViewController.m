@@ -12,7 +12,8 @@
 //
 
 #import "RootViewController.h"
-#import "APService.h"
+#import "JPUSHService.h"
+#import "AppDelegate.h"
 
 @interface RootViewController ()
 
@@ -57,7 +58,7 @@
                                               green:122.0 / 255
                                                blue:255.0 / 255
                                               alpha:1];
-  _registrationValueLabel.text = [APService registrationID];
+  _registrationValueLabel.text = [JPUSHService registrationID];
   _registrationValueLabel.textColor = [UIColor colorWithRed:0.0 / 255
                                                       green:122.0 / 255
                                                        blue:255.0 / 255
@@ -75,22 +76,7 @@
 
 //获取appKey
 - (NSString *)getAppKey {
-  NSURL *urlPushConfig = [[[NSBundle mainBundle] URLForResource:@"PushConfig"
-                                                  withExtension:@"plist"] copy];
-  NSDictionary *dictPushConfig =
-      [NSDictionary dictionaryWithContentsOfURL:urlPushConfig];
-
-  if (!dictPushConfig) {
-    return nil;
-  }
-
-  // appKey
-  NSString *strApplicationKey = [dictPushConfig valueForKey:(@"APP_KEY")];
-  if (!strApplicationKey) {
-    return nil;
-  }
-
-  return [strApplicationKey lowercaseString];
+  return [appKey lowercaseString];
 }
 
 - (void)dealloc {
@@ -158,8 +144,8 @@
                                                  alpha:1];
   NSLog(@"已登录");
 
-  if ([APService registrationID]) {
-    _registrationValueLabel.text = [APService registrationID];
+  if ([JPUSHService registrationID]) {
+    _registrationValueLabel.text = [JPUSHService registrationID];
     NSLog(@"get RegistrationID");
   }
 }

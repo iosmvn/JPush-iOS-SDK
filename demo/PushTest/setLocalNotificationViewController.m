@@ -12,7 +12,7 @@
 //
 
 #import "setLocalNotificationViewController.h"
-#import "APService.h"
+#import "JPUSHService.h"
 
 @interface setLocalNotificationViewController () {
   CGRect _frame;
@@ -41,7 +41,7 @@
   // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)setNotification:(id)sender {
-  _notification = [APService
+  _notification = [JPUSHService
       setLocalNotification:_notificationDatePicker.date
                  alertBody:_notificationBodyTextField.text
                      badge:[_notificationBadgeTextField.text intValue]
@@ -75,7 +75,7 @@
 - (IBAction)clearAllNotification:(id)sender {
   //[JPFService deleteLocalNotificationWithIdentifierKey:@"test"];
   //  [APService deleteLocalNotification:_notification];
-  [APService clearAllLocalNotifications];
+  [JPUSHService clearAllLocalNotifications];
   UIAlertView *alert =
       [[UIAlertView alloc] initWithTitle:@"设置"
                                  message:@"取消所有本地通知成功"
@@ -88,7 +88,7 @@
 - (IBAction)clearLastNotification {
   NSString *alertMessage;
   if (_notification) {
-    [APService deleteLocalNotification:_notification];
+    [JPUSHService deleteLocalNotification:_notification];
     _notification = nil;
     alertMessage = @"取消上一个通知成功";
   } else {
