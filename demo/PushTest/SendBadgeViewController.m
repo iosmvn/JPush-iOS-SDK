@@ -7,7 +7,7 @@
 //
 
 #import "SendBadgeViewController.h"
-#include "JPUSHService.h"
+#import "JPUSHService.h"
 
 @interface SendBadgeViewController () {
   CGRect _frame;
