@@ -33,10 +33,11 @@
 		1F5BDED4199CD7CF00AAFFF1 /* SetTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BDECA199CD7CF00AAFFF1 /* SetTagsViewController.m */; };
 		1FC88A7318EA51CC006C3011 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC88A7218EA51CC006C3011 /* Security.framework */; };
 		1FCA68DE19767F520030886E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA68DD19767F520030886E /* Images.xcassets */; };
-		296236D61D057F0800C04577 /* jpush-ios-2.1.9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 296236D51D057F0800C04577 /* jpush-ios-2.1.9.a */; };
+		296236D61D057F0800C04577 /* jpush-ios-2.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 296236D51D057F0800C04577 /* jpush-ios-2.2.0.a */; };
 		328D48DD1CA26E4500D987A9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328D48DC1CA26E4500D987A9 /* AdSupport.framework */; };
 		594D3BE11D47603500DB6FA5 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594D3BE01D47603500DB6FA5 /* UserNotifications.framework */; };
 		59AD7A2A1D4885670075DD1D /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 59AD7A291D4885670075DD1D /* Readme */; };
+		59D6ABB21D87D3D6007229B9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D6ABB11D87D3D6007229B9 /* libresolv.tbd */; };
 		59D844011D47410A0043E622 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D844001D47410A0043E622 /* NotificationService.m */; };
 		59D844051D47410A0043E622 /* NotificationServiceTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59D843FD1D47410A0043E622 /* NotificationServiceTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AAD940A71BBA5A0500A08AFF /* JPUSHService.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD940A61BBA5A0500A08AFF /* JPUSHService.h */; };
@@ -107,10 +108,11 @@
 		1F5BDECA199CD7CF00AAFFF1 /* SetTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTagsViewController.m; sourceTree = "<group>"; };
 		1FC88A7218EA51CC006C3011 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1FCA68DD19767F520030886E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		296236D51D057F0800C04577 /* jpush-ios-2.1.9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jpush-ios-2.1.9.a; path = ../lib/jpush-ios-2.1.9.a; sourceTree = "<group>"; };
+		296236D51D057F0800C04577 /* jpush-ios-2.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jpush-ios-2.2.0.a; path = ../lib/jpush-ios-2.2.0.a; sourceTree = "<group>"; };
 		328D48DC1CA26E4500D987A9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		594D3BE01D47603500DB6FA5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		59AD7A291D4885670075DD1D /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = SOURCE_ROOT; };
+		59D6ABB11D87D3D6007229B9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		59D843FD1D47410A0043E622 /* NotificationServiceTest.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceTest.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D843FF1D47410A0043E622 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		59D844001D47410A0043E622 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
@@ -146,8 +148,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D6ABB21D87D3D6007229B9 /* libresolv.tbd in Frameworks */,
 				594D3BE11D47603500DB6FA5 /* UserNotifications.framework in Frameworks */,
-				296236D61D057F0800C04577 /* jpush-ios-2.1.9.a in Frameworks */,
+				296236D61D057F0800C04577 /* jpush-ios-2.2.0.a in Frameworks */,
 				328D48DD1CA26E4500D987A9 /* AdSupport.framework in Frameworks */,
 				AAD940AB1BBA5AEB00A08AFF /* libz.tbd in Frameworks */,
 				1FC88A7318EA51CC006C3011 /* Security.framework in Frameworks */,
@@ -260,8 +263,9 @@
 		DD2DE94E160AB11F0092BF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59D6ABB11D87D3D6007229B9 /* libresolv.tbd */,
 				594D3BE01D47603500DB6FA5 /* UserNotifications.framework */,
-				296236D51D057F0800C04577 /* jpush-ios-2.1.9.a */,
+				296236D51D057F0800C04577 /* jpush-ios-2.2.0.a */,
 				328D48DC1CA26E4500D987A9 /* AdSupport.framework */,
 				AAD940AA1BBA5AEB00A08AFF /* libz.tbd */,
 				1FC88A7218EA51CC006C3011 /* Security.framework */,
