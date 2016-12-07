@@ -33,25 +33,42 @@
   // Override point for customization after application launch.
   NSString *advertisingId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
   
-  if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
-#ifdef NSFoundationVersionNumber_iOS_9_x_Max
-    JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
-    entity.types = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
-    [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
-#endif
-  } else if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
-      //可以添加自定义categories
-      [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
-                                                        UIUserNotificationTypeSound |
-                                                        UIUserNotificationTypeAlert)
-                                            categories:nil];
-  } else {
-      //categories 必须为nil
-      [JPUSHService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
-                                                        UIRemoteNotificationTypeSound |
-                                                        UIRemoteNotificationTypeAlert)
-                                            categories:nil];
+  // 3.0.0及以后版本注册可以这样写，也可以继续用旧的注册方式
+  JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
+  entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
+  if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+    //可以添加自定义categories
+//    if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
+//      NSSet<UNNotificationCategory *> *categories;
+//      entity.categories = categories;
+//    }
+//    else {
+//      NSSet<UIUserNotificationCategory *> *categories;
+//      entity.categories = categories;
+//    }
   }
+  [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
+  
+  // 3.0.0以前版本旧的注册方式
+//  if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
+//#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+//    JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
+//    entity.types = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
+//    [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
+//#endif
+//  } else if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+//      //可以添加自定义categories
+//      [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+//                                                        UIUserNotificationTypeSound |
+//                                                        UIUserNotificationTypeAlert)
+//                                            categories:nil];
+//  } else {
+//      //categories 必须为nil
+//      [JPUSHService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+//                                                        UIRemoteNotificationTypeSound |
+//                                                        UIRemoteNotificationTypeAlert)
+//                                            categories:nil];
+//  }
   
   //如不需要使用IDFA，advertisingIdentifier 可为nil
   [JPUSHService setupWithOption:launchOptions appKey:appKey
