@@ -39,8 +39,8 @@
 		59D6ABB21D87D3D6007229B9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D6ABB11D87D3D6007229B9 /* libresolv.tbd */; };
 		59D844011D47410A0043E622 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D844001D47410A0043E622 /* NotificationService.m */; };
 		59D844051D47410A0043E622 /* NotificationServiceTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59D843FD1D47410A0043E622 /* NotificationServiceTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		59F0FDD71DC0560A00A70C59 /* jcore-ios-1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F0FDD51DC0560A00A70C59 /* jcore-ios-1.1.0.a */; };
-		59F0FDD81DC0560A00A70C59 /* jpush-ios-3.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F0FDD61DC0560A00A70C59 /* jpush-ios-3.0.1.a */; };
+		59F0FDD71DC0560A00A70C59 /* jcore-ios-1.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F0FDD51DC0560A00A70C59 /* jcore-ios-1.1.1.a */; };
+		59F0FDD81DC0560A00A70C59 /* jpush-ios-3.0.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F0FDD61DC0560A00A70C59 /* jpush-ios-3.0.2.a */; };
 		AAD940A71BBA5A0500A08AFF /* JPUSHService.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD940A61BBA5A0500A08AFF /* JPUSHService.h */; };
 		AAD940AB1BBA5AEB00A08AFF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD940AA1BBA5AEB00A08AFF /* libz.tbd */; };
 		DD0799AB1654D5E7006FCFEE /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2DE95E160AB11F0092BF6A /* AppDelegate.h */; };
@@ -117,8 +117,8 @@
 		59D843FF1D47410A0043E622 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		59D844001D47410A0043E622 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		59D844021D47410A0043E622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59F0FDD51DC0560A00A70C59 /* jcore-ios-1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jcore-ios-1.1.0.a"; path = "../Lib/jcore-ios-1.1.0.a"; sourceTree = "<group>"; };
-		59F0FDD61DC0560A00A70C59 /* jpush-ios-3.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-3.0.1.a"; path = "../Lib/jpush-ios-3.0.1.a"; sourceTree = "<group>"; };
+		59F0FDD51DC0560A00A70C59 /* jcore-ios-1.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jcore-ios-1.1.1.a; path = ../Lib/jcore-ios-1.1.1.a; sourceTree = "<group>"; };
+		59F0FDD61DC0560A00A70C59 /* jpush-ios-3.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jpush-ios-3.0.2.a; path = ../Lib/jpush-ios-3.0.2.a; sourceTree = "<group>"; };
 		59F1761C1DBF66F300D2C481 /* NotificationServiceTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServiceTest.entitlements; sourceTree = "<group>"; };
 		59F1761D1DBF68E200D2C481 /* PushTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushTest.entitlements; sourceTree = "<group>"; };
 		AAD940A61BBA5A0500A08AFF /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
@@ -161,11 +161,11 @@
 				DD2DE96D160AB1800092BF6A /* CoreTelephony.framework in Frameworks */,
 				DD2DE96B160AB1710092BF6A /* CoreFoundation.framework in Frameworks */,
 				DD2DE969160AB1690092BF6A /* CFNetwork.framework in Frameworks */,
-				59F0FDD71DC0560A00A70C59 /* jcore-ios-1.1.0.a in Frameworks */,
+				59F0FDD71DC0560A00A70C59 /* jcore-ios-1.1.1.a in Frameworks */,
 				DD2DE950160AB11F0092BF6A /* UIKit.framework in Frameworks */,
 				DD2DE952160AB11F0092BF6A /* Foundation.framework in Frameworks */,
 				DD2DE954160AB11F0092BF6A /* CoreGraphics.framework in Frameworks */,
-				59F0FDD81DC0560A00A70C59 /* jpush-ios-3.0.1.a in Frameworks */,
+				59F0FDD81DC0560A00A70C59 /* jpush-ios-3.0.2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +269,8 @@
 		DD2DE94E160AB11F0092BF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59F0FDD51DC0560A00A70C59 /* jcore-ios-1.1.0.a */,
-				59F0FDD61DC0560A00A70C59 /* jpush-ios-3.0.1.a */,
+				59F0FDD51DC0560A00A70C59 /* jcore-ios-1.1.1.a */,
+				59F0FDD61DC0560A00A70C59 /* jpush-ios-3.0.2.a */,
 				59D6ABB11D87D3D6007229B9 /* libresolv.tbd */,
 				594D3BE01D47603500DB6FA5 /* UserNotifications.framework */,
 				328D48DC1CA26E4500D987A9 /* AdSupport.framework */,
@@ -391,7 +391,7 @@
 						};
 					};
 					DD2DE94A160AB11F0092BF6A = {
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -631,7 +631,6 @@
 				CODE_SIGN_ENTITLEMENTS = PushTest/PushTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushTest/PushTest-Prefix.pch";
 				INFOPLIST_FILE = "PushTest/PushTest-Info.plist";
@@ -661,7 +660,6 @@
 				CODE_SIGN_ENTITLEMENTS = PushTest/PushTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushTest/PushTest-Prefix.pch";
 				INFOPLIST_FILE = "PushTest/PushTest-Info.plist";
